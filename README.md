@@ -65,19 +65,23 @@ biomaRt-based tool for analyzing Huntington's disease CAG repeats
 - **Database**: Integration with Ensembl and OMIM
 - **Application**: Clinical genetic counseling support
 
-### 🤖 [Bioinformatics Python Toolkit](https://github.com/ugochi141/bioinfo-python-tools)
-Collection of Python scripts for sequence analysis and data visualization
+# 🤖 Bioinformatics Python Toolkit
+
+A collection of Python scripts for sequence analysis and data visualization in bioinformatics.
+
+## Features
+
+- DNA sequence analysis
+- RNA transcription
+- GC content calculation
+- Motif finding
+- And more...
+
+## Example Usage
+
 ```python
-# Example: DNA to RNA conversion with analysis
-def analyze_sequence(dna):
-    """Complete sequence analysis pipeline"""
-    length = len(dna)
-    a_count = dna.count('A')
-    gc_content = (dna.count('G') + dna.count('C')) / length * 100
-    rna = dna.replace('T', 'U')
-    return {
-        'length': length,
-        'a_count': a_count,
-        'gc_content': gc_content,
-        'rna': rna
-    }
+from dna_tools import analyze_sequence
+
+dna = "ATGGGCCGCAGTAATTGA"
+result = analyze_sequence(dna)
+print(result)
