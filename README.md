@@ -6,12 +6,12 @@
 
 ## 🧬 About Me
 
-Healthcare professional and bioinformatics developer at Kaiser Permanente, transforming clinical insights through computational genomics. Currently pursuing MS in Biotechnology at Johns Hopkins University (2024-2026).
+Healthcare professional and bioinformatics developer at Kaiser Permanente, transforming clinical insights through computational genomics. Currently pursuing MS in Biotechnology at Johns Hopkins University (2024-2026), I specialize in NGS data analysis, gene prediction, and developing Python tools for genomic research.
 
-🏥 **Current Role**: Kaiser Permanente - Laboratory Operation Manager  
-🎓 **Education**: DHSc, MS Biotechnology (JHU, in progress)  
-💻 **Focus**: NGS variant analysis, gene prediction, disease-gene networks  
-🧬 **Achievement**: Identified 20 mitochondrial genes linked to neurological disorders
+🏥 **Current Role**: Kaiser Permanente - Integrating bioinformatics into clinical workflows 
+🎓 **Education**: DHSc, MS Biotechnology (JHU, in progress) 
+💻 **Focus**: NGS variant analysis, gene prediction, disease-gene networks 
+🧬 **Achievement**: Identified 20 mitochondrial genes linked to neurological disorders 
 
 ## 🛠️ Technical Stack
 
@@ -19,35 +19,65 @@ Healthcare professional and bioinformatics developer at Kaiser Permanente, trans
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![BioPython](https://img.shields.io/badge/BioPython-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
 ![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![biomaRt](https://img.shields.io/badge/biomaRt-276DC3?style=for-the-badge&logo=r&logoColor=white)
 
 ### NGS & Analysis Tools
 ![VEP](https://img.shields.io/badge/Ensembl_VEP-86B817?style=for-the-badge)
 ![BLAST](https://img.shields.io/badge/BLAST-336791?style=for-the-badge)
+![Glimmer](https://img.shields.io/badge/Glimmer3-FF6900?style=for-the-badge)
 ![gnomAD](https://img.shields.io/badge/gnomAD-4169E1?style=for-the-badge)
 
-## 📊 GitHub Stats
+### Clinical & Laboratory
+![Medical Technology](https://img.shields.io/badge/MT(AMT)-FF4500?style=for-the-badge)
+![Molecular Biology](https://img.shields.io/badge/MB(ASCP)-4B0082?style=for-the-badge)
+![Lean Six Sigma](https://img.shields.io/badge/Lean_Six_Sigma-FFC000?style=for-the-badge)
+
+## 📊 GitHub Stats & Activity
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ugochi141&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ugochi141&theme=tokyonight" alt="GitHub Streak" />
 </div>
 
-## 🔬 Featured Projects
+## 🔬 Featured Bioinformatics Projects
 
-### 🧬 [JARID2 SNP Analysis](https://github.com/ugochi141/jarid2-alzheimers-study)
-Comprehensive analysis of rs78636169 associated with Alzheimer's disease
-- **Impact**: Genome-wide significance (P = 5.76×10⁻¹⁰)
-- **Tech**: GWAS, VEP, gnomAD, IGV
+### 🧬 [NGS Variant Analysis Pipeline](https://github.com/ugochi141/ngs-variant-analysis)
+Comprehensive pipeline for analyzing patient variants using VEP, gnomAD, and ClinVar
+- **Tech**: Python, Ensembl VEP, matplotlib
+- **Impact**: Automated variant classification for clinical interpretation
+- **Key Finding**: Novel variant chr6:15241774 A>G characterized as VUS
 
-### 🧪 [Mitochondrial Gene Discovery](https://github.com/ugochi141/mito-neuro-genes)
-Database mining project identifying disease associations
-- **Results**: 20 genes linked to neurological disorders
+### 🧪 [Mitochondrial-Neurological Gene Discovery](https://github.com/ugochi141/mito-neuro-genes)
+Database mining project identifying disease associations in 2,847 mitochondrial genes
+- **Results**: 20 high-confidence genes linked to neurological disorders
+- **Conditions**: Leber Optic Atrophy, MELAS, Charcot-Marie-Tooth
 - **Clinical Impact**: 60% are current drug targets
 
-### 🔍 [NGS Variant Pipeline](https://github.com/ugochi141/ngs-variant-analysis)
-Automated clinical variant interpretation system
-- **Tech**: Python, VEP v114.2, matplotlib
-- **Key Finding**: Novel variant chr6:15241774 A>G
+### 🔍 [Bacterial Gene Prediction Suite](https://github.com/ugochi141/gene-prediction-tools)
+Glimmer3-based pipeline for prokaryotic gene prediction and functional annotation
+- **Organism**: Halanaerobium sp. MDAL1
+- **Findings**: 4 genes predicted, 86.3% coding density
+- **Validation**: BLAST revealed truncated predictions, improving accuracy
 
-## 📫 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ugochindubuisi)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:u.l.ndubuisi@gmail.com)
+### 💊 [HTT Gene Analysis Tool](https://github.com/ugochi141/huntington-analysis)
+biomaRt-based tool for analyzing Huntington's disease CAG repeats
+- **Features**: Automated repeat counting, penetrance classification
+- **Database**: Integration with Ensembl and OMIM
+- **Application**: Clinical genetic counseling support
+
+### 🤖 [Bioinformatics Python Toolkit](https://github.com/ugochi141/bioinfo-python-tools)
+Collection of Python scripts for sequence analysis and data visualization
+```python
+# Example: DNA to RNA conversion with analysis
+def analyze_sequence(dna):
+    """Complete sequence analysis pipeline"""
+    length = len(dna)
+    a_count = dna.count('A')
+    gc_content = (dna.count('G') + dna.count('C')) / length * 100
+    rna = dna.replace('T', 'U')
+    return {
+        'length': length,
+        'a_count': a_count,
+        'gc_content': gc_content,
+        'rna': rna
+    }
